@@ -1,0 +1,16 @@
+<h2 class="text-center">Check forecast all around the world!</h2>
+
+<form #search="ngForm" class="mt-5 form" (submit)="handleSubmit()">
+  <div class="form-group">
+    <label for="location" class="form-label">Location:</label>
+    <input
+      type="text"
+      name="location"
+      [(ngModel)]="searchLocation"
+      class="form-control"
+    />
+    <button type="submit" class="btn btn-sm btn-success flex-end my-3">
+      Search
+    </button>
+  </div>
+</form>

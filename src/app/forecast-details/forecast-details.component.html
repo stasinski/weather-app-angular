@@ -1,0 +1,14 @@
+<div *ngIf="weatherData.name" class="d-flex flex-column align-items-center">
+  <h2 class="border border-dark w-100 text-center p-2">
+    Location : {{ weatherData.name }}
+  </h2>
+  <h2 class="border border-dark w-100 text-center p-2">
+    Temp : {{ weatherData.main.temp }}
+  </h2>
+  <h2 class="border border-dark w-100 text-center p-2">
+    feels like : {{ weatherData.main.feels_like }}
+  </h2>
+  <h2 class="border border-dark w-100 text-center p-2">
+    Clouds: {{ weatherData.clouds.all }}%
+  </h2>
+</div>
